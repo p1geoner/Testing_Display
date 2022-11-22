@@ -1,3 +1,87 @@
+/* Работа со шрифтами */
+@font-face{
+    font-family: 'Sono';
+    src: url("fonts/Sono-Bold.woff2"),
+    url("fonts/Sono-Bold.woff");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Sono';
+    src: url("fonts/Sono-SemiBold.woff2"),
+    url("fonts/Sono-SemiBold.woff");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+.Sono-B{
+    font-family: 'Sono';
+    font-weight: 700;
+}
+.Sono-SB{
+    font-family: 'Sono';
+    font-weight: 600;
+}
+.Kanit400{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+.Kanit500{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+.Arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fz30{
+    font-size: 30px;
+}
+.italic{
+    font-style: italic;
+}
+.fw700{
+    font-weight: 700;
+}
+.colored{
+    color: blueviolet;
+}
+.tar{
+    text-align: right;
+}
+.taj{
+    text-align: justify;
+}
+.tac{
+    text-align: center;
+}
+.tdlt{
+    text-decoration: line-through;
+}
+.shadow{
+    text-shadow: 1px 1px 1px rgb(255, 15, 15);
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.ident{
+    text-indent: 200px;
+}
+.lspace{
+    letter-spacing: 10px;
+}
+.wspace{
+    word-spacing: 10px;
+}
+.lineheight{
+    line-height:100px;
+    
+}
+
+
+
+
+/*Работа с боди */
 body{
     margin: 0;
     margin: 0;
@@ -20,6 +104,7 @@ body::-webkit-scrollbar {
 .main{
     
 }
+/* работа с шапкой */
 .header{
     display: inline-block;
     width: 100%;
@@ -58,7 +143,7 @@ a{
     font-family: 'Kaushan Script', cursive;
     
 }
-
+/* заголовки */
 .zag{
     padding: 30px;
 }
@@ -232,4 +317,22 @@ h2{
     align-items: center;
     flex-direction: column;
 }
+.dp-block, .dp-flex1, .dp-flex2, .dp-flex3, .dp-inline, .dp-inline-block{
+        position: relative;
+}
+.relative{
+    position: relative;
+    top: 50px;
+}
+.absolute{
+    position: absolute;
+    left: 150px;
+
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 

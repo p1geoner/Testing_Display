@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Display</title>
     <meta name="description" content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores magnam ipsa quo perferendis itaque vero atque est repellendus maiores, eius deleniti animi quis placeat ratione. Culpa eum dolore perspiciatis eaque?" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+        </style>
+    
 </head>
 <body>
+    
     <header class="header">
         <nav class="nav">
             <a class="logo">
@@ -32,31 +43,31 @@
             <section class="dp-block" id="dp-block">
                     <h2>Display: Block;</h2>
                     <div class="block"><p>1</p></div>
-                    <div class="block"><p>2</p></div>
-                    <div class="block"><p>3</p></div>
-                    <div class="block"><p>4</p></div>
+                    <div class="block relative"><p>2</p></div>
+                    <div class="block absolute"><p>3</p></div>
+                    <div class="block fixed"><p>4</p></div>
             </section>
             <section class="dp-inline-block" id="dp-inline-block">
                 <h2>Display: Inline-block;</h2>
                 <div class="block"><p>1</p></div>
-                <div class="block"><p>2</p></div>
-                <div class="block"><p>3</p></div>
-                <div class="block"><p>4</p></div>
+                <div class="block relative"><p>2</p></div>
+                <div class="block absolute"><p>3</p></div>
+                <div class="block fixed"><p>4</p></div>
             </section>
             <section class="dp-inline" id="dp-inline">
                 <h2>Display: Inline;</h2>
-                <div class="block-inline"><p>1</p></div>
-                <div class="block-inline"><p>2</p></div>
-                <div class="block-inline"><p>3</p></div>
-                <div class="block-inline"><p>4</p></div>
+                <div class="block-inline"><span>1</span></div>
+                <div class="block-inline relative"><span>2</span></div>
+                <div class="block-inline absolute"><span>3</span></div>
+                <div class="block-inline fixed"><span>4</span></div>
             </section>
             <section class="dp-flex" id="dp-flex">
                 <h2>Display: Flex; justify-content: space-around;</h2>
                     <div class="dp-flex1">
                         <div class="block1"><span>1</span></div>
-                        <div class="block1"><span>2</span></div>
-                        <div class="block1"><span>3</span></div>
-                        <div class="block1"><span>4</span></div>
+                        <div class="block1 relative"><span>2</span></div>
+                        <div class="block1 absolute"><span>3</span></div>
+                        <div class="block1 fixed"><span>4</span></div>
                     </div>
                 
             </section>
@@ -64,20 +75,45 @@
                 <h2>Display: Flex; justify-content: start;</h2>
                 <div class="dp-flex2">
                     <div class="block1" id="b1"><span>1</span></div>
-                    <div class="block1" id="b2"><span>2</span></div>
-                    <div class="block1" id="b3"><span>3</span></div>
-                    <div class="block1" id="b4"><span>4</span></div>
+                    <div class="block1 relative" id="b2"><span>2</span></div>
+                    <div class="block1 absolute" id="b3"><span>3</span></div>
+                    <div class="block1 fixed" id="b4"><span>4</span></div>
                 </div>
             </section>
             <section class="dp-flex">
                 <h2>Display: Flex; flex-direction: column;</h2>
                 <div class="dp-flex3">
                     <div class="block1" id="b1"><span>1</span></div>
-                    <div class="block1" id="b2"><span>2</span></div>
-                    <div class="block1" id="b3"><span>3</span></div>
-                    <div class="block1" id="b4"><span>4</span></div>
+                    <div class="block1 relative" id="b2"><span>2</span></div>
+                    <div class="block1 absolute" id="b3"><span>3</span></div>
+                    <div class="block1 fixed" id="b4"><span>4</span></div>
                 </div>
             </section>
         </div>
+        <section class="text">
+           <p class="Sono-B">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="Sono-SB">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="Kanit400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="Kanit500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="Arial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="fz30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="fw700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="colored">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="tar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="taj">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="tac">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="tdlt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="ident">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="lspace">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="wspace">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+           <p class="lineheight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi perspiciatis minima, consequatur ex debitis, adipisci unde fuga neque fugit at! Incidunt dicta dolore obcaecati dolor. At in aliquid nobis!</p>
+
+
+
+
+        </section>
 </body>
 </html>
